@@ -22,13 +22,13 @@ class LikesController < ApplicationController
 
 
   get '/v1/comments/:id/likes' do
-    comment = Comment.find_by(comment: params[:id])
+    comment = Comment.find_by(id: params[:id])
     halt 404 unless comment
     json(likes: comment.likes.count)
   end
 
   post '/v1/comments/:id/likes' do
-    comment = Comment.find_by(comment: params[:id])
+    comment = Comment.find_by(id: params[:id])
     halt 404 unless comment
     if comment.likes.create
       json({ message: 'Liked!' })
