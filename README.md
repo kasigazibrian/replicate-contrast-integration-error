@@ -13,6 +13,7 @@ Sample Application to recreate the exception thrown when using contrast-agent wi
  ```
  $ rspec spec/controllers/likes_controller.rb`
  
+ ```
  You will get this error 
  
- ```
+![Screenshot of the error](/screenshots/error.png?raw=true)
