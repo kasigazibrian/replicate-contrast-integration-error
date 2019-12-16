@@ -1,0 +1,5 @@
+.env
+.idea
+contrast.log
+contrast_service.log
+security.log

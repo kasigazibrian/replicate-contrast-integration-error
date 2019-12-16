@@ -1,0 +1,12 @@
+api:
+  url: https://app.contrastsecurity.com/Contrast
+agent:
+  logger:
+    level: DEBUG
+    path: ./contrast.log
+  service:
+    logger:
+      path: ./contrast_service.log
+      level: DEBUG
+    host: localhost
+    port: 30555
